@@ -1,0 +1,48 @@
+{% import 'macros/button.html' as button %} {% set btn = {url:"#"} %}
+
+<section class="section-hero">
+  <div class="hero">
+    <div class="hero-text-box">
+      <h1 class="hero-heading">{{sectionHeader.title}}</h1>
+      <p class="hero-para">{{sectionHeader.subtitle}}</p>
+      <div class="btn-group">
+        {{ button.render('Start eating well',btn.url, { class:'btn--full' }) }}
+        {{ button.render('Learn more ↓',btn.url, { class:'btn--outline' }) }}
+      </div>
+      <div class="delivered-meals">
+        <picture>
+          <img
+            src="/modules/my-apostrophe-assets/image/customer-1.jpg"
+            alt=""
+          />
+          <img
+            src="/modules/my-apostrophe-assets/image/customer-2.jpg"
+            alt=""
+          />
+          <img
+            src="/modules/my-apostrophe-assets/image/customer-3.jpg"
+            alt=""
+          />
+          <img
+            src="/modules/my-apostrophe-assets/image/customer-4.jpg"
+            alt=""
+          />
+          <img
+            src="/modules/my-apostrophe-assets/image/customer-5.jpg"
+            alt=""
+          />
+          <img
+            src="/modules/my-apostrophe-assets/image/customer-6.jpg"
+            alt=""
+          />
+        </picture>
+        <p><span>250,000+</span> meals delivered last year!</p>
+      </div>
+    </div>
+    <div class="hero-img-box">
+      <picture>
+        <img src="/modules/my-apostrophe-assets/image/hero.png" alt="" />
+      </picture>
+    </div>
+  </div>
+</section>

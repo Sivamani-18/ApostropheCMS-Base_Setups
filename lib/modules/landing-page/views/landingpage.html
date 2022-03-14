@@ -1,6 +1,14 @@
 {% extends "layout.html" %} {% block extraBody %}
 <script src=""></script>
 {% endblock %} {% block main %}
+<!-- Heading -->
+{% set sectionHeader = { title: 'A healthy meal delivered to your door, every
+single day', subtitle: "The smart 365-days-per-year food subscription that will
+make you eat healthy again. Tailored to your personal tastes and nutritional
+needs.", class: 'mx-0' } %}
+<!-- Heading End -->
+
+{% import 'macros/svgs.html' as svgs %}
 <section>
   <main>
     <header class="header-section">
@@ -15,62 +23,15 @@
           <li><a target="_blank" href="/src/timeline.html">Time Line</a></li>
           <li><a href="#">Testimonials</a></li>
           <li><a href="#">Pricing</a></li>
-          <li><a class="nav-link-btn" href="#">Try for free</a></li>
+          <li>
+            <a class="nav-link-btn" href="#"
+              >Try for free {{ svgs.DownArrow() }}</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
-    <section class="section-hero">
-      <div class="hero">
-        <div class="hero-text-box">
-          <h1 class="hero-heading">
-            A healthy meal delivered to your door, every single day
-          </h1>
-          <p class="hero-para">
-            The smart 365-days-per-year food subscription that will make you eat
-            healthy again. Tailored to your personal tastes and nutritional
-            needs.
-          </p>
-          <div class="btn-group">
-            <a href="#" class="btn btn--full">Start eating well</a>
-            <a href="#" class="btn btn--outline">Learn more ↓</a>
-          </div>
-          <div class="delivered-meals">
-            <picture>
-              <img
-                src="/modules/my-apostrophe-assets/image/customer-1.jpg"
-                alt=""
-              />
-              <img
-                src="/modules/my-apostrophe-assets/image/customer-2.jpg"
-                alt=""
-              />
-              <img
-                src="/modules/my-apostrophe-assets/image/customer-3.jpg"
-                alt=""
-              />
-              <img
-                src="/modules/my-apostrophe-assets/image/customer-4.jpg"
-                alt=""
-              />
-              <img
-                src="/modules/my-apostrophe-assets/image/customer-5.jpg"
-                alt=""
-              />
-              <img
-                src="/modules/my-apostrophe-assets/image/customer-6.jpg"
-                alt=""
-              />
-            </picture>
-            <p><span>250,000+</span> meals delivered last year!</p>
-          </div>
-        </div>
-        <div class="hero-img-box">
-          <picture>
-            <img src="/modules/my-apostrophe-assets/image/hero.png" alt="" />
-          </picture>
-        </div>
-      </div>
-    </section>
+    {% include "./hero.html" %}
     <section class="section-how" id="how">
       <div class="container">
         <span class="subheading">How it works</span>
@@ -139,68 +100,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="container grid grid--footer">
-        <div class="logo-col">
-          <a href="#" class="footer-logo">
-            <img
-              class="logo"
-              alt="logo"
-              src="/modules/my-apostrophe-assets/image/logo.png"
-            />
-          </a>
-          <p class="copyright">
-            Copyright © <span class="year">2022</span> by Royalfood, Inc. All
-            rights reserved.
-          </p>
-        </div>
-
-        <div class="address-col">
-          <p class="footer-heading">Contact us</p>
-          <address class="contacts">
-            <p class="address">
-              623 Harrison St., 2nd Floor, San Francisco, CA 94107
-            </p>
-            <p>
-              <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
-              ><br />
-              <a class="footer-link" href="mailto:hello@omnifood.com"
-                >hello@omnifood.com</a
-              >
-            </p>
-          </address>
-        </div>
-
-        <nav class="nav-col">
-          <p class="footer-heading">Account</p>
-          <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Create account</a></li>
-            <li><a class="footer-link" href="#">Sign in</a></li>
-            <li><a class="footer-link" href="#">iOS app</a></li>
-            <li><a class="footer-link" href="#">Android app</a></li>
-          </ul>
-        </nav>
-
-        <nav class="nav-col">
-          <p class="footer-heading">Company</p>
-          <ul class="footer-nav">
-            <li><a class="footer-link" href="#">About Omnifood</a></li>
-            <li><a class="footer-link" href="#">For Business</a></li>
-            <li><a class="footer-link" href="#">Cooking partners</a></li>
-            <li><a class="footer-link" href="#">Careers</a></li>
-          </ul>
-        </nav>
-
-        <nav class="nav-col">
-          <p class="footer-heading">Resources</p>
-          <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Recipe directory </a></li>
-            <li><a class="footer-link" href="#">Help center</a></li>
-            <li><a class="footer-link" href="#">Privacy &amp; terms</a></li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
+    {% include "./footer.html" %}
   </main>
 </section>
 {% endblock %}

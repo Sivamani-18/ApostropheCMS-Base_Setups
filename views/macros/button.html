@@ -1,0 +1,7 @@
+{% macro render(label, url, options) %}
+<a
+  href="{{ url }}"
+  class="btn{% if options.class %} {{ options.class }}{% endif %}"
+  >{{ label }}</a
+>
+{% endmacro %}
