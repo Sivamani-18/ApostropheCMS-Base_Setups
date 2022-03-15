@@ -16,7 +16,9 @@
   "author": "Apostrophe Technologies, Inc.",
   "license": "MIT",
   "dependencies": {
-    "apostrophe": "^2.116.1"
+    "apostrophe": "^2.116.1",
+    "typy": "^2.0.1",
+    "lodash": "^4.17.11"
   },
   "nodemonConfig": {
     "verbose": true,

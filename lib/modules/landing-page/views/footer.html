@@ -40,6 +40,11 @@
     <nav class="nav-col">
       <p class="footer-heading">Company</p>
       <ul class="footer-nav">
+        {{ apos.area(data.global, 'footer_link', { widgets: {
+        'apostrophe-rich-text': { toolbar: [ 'Styles', 'Bold', 'Italic', 'Link',
+        'Unlink' ], styles: [ { name: 'Heading', element: 'h2'}, { name:
+        'Min_Heading', element: 'h6'}, { name: 'Paragraph', element:'p' } ] } }
+        }) }}
         <li><a class="footer-link" href="#">About Omnifood</a></li>
         <li><a class="footer-link" href="#">For Business</a></li>
         <li><a class="footer-link" href="#">Cooking partners</a></li>

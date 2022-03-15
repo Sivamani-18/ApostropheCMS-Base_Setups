@@ -16,12 +16,19 @@ const apos = require("apostrophe")({
   modules: {
     // Apostrophe module configuration
 
+    // The module also contains useful library .js files containing ready-made options
+    // for areas and the like, which other modules `require` to avoid redundancy.
+    helpers: { extend: "apostrophe-module" },
+
     "landing-page": {},
 
-    // Note: most configuration occurs in the respective
-    // modules' directories. See lib/apostrophe-assets/index.js for an example.
-    // However any modules that are not present by default in Apostrophe must at
-    // least have a minimal configuration here: `moduleName: {}`
+    // Content Widgets
+    "image-widgets": { extend: "apostrophe-widgets" },
+    "two-panel-widgets": { extend: "apostrophe-widgets" },
+    "link-widgets": { extend: "apostrophe-widgets" },
+
+    // Layout Widgets
+    "columns-widgets": { extend: "apostrophe-widgets" },
 
     // If a template is not found somewhere else, serve it from the top-level
     // `views/` folder of the project
