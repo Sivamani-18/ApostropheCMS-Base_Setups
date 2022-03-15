@@ -21,6 +21,7 @@ const apos = require("apostrophe")({
     helpers: { extend: "apostrophe-module" },
 
     "landing-page": {},
+    "timeline-page": {},
 
     // Content Widgets
     "image-widgets": { extend: "apostrophe-widgets" },
