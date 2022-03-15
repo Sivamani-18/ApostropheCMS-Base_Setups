@@ -52,3 +52,4 @@ docker-compose stop
 
 When you start it up again, your uploaded files and your database will still be there.
 
+https://mozilla.github.io/nunjucks/templating.html#extends

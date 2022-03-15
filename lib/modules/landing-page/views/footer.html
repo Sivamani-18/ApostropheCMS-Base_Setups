@@ -27,38 +27,9 @@
         </p>
       </address>
     </div>
-    <nav class="nav-col">
-      <p class="footer-heading">Account</p>
-      <ul class="footer-nav">
-        <li><a class="footer-link" href="#">Create account</a></li>
-        <li><a class="footer-link" href="#">Sign in</a></li>
-        <li><a class="footer-link" href="#">iOS app</a></li>
-        <li><a class="footer-link" href="#">Android app</a></li>
-      </ul>
-    </nav>
-
-    <nav class="nav-col">
-      <p class="footer-heading">Company</p>
-      <ul class="footer-nav">
-        {{ apos.area(data.global, 'footer_link', { widgets: {
-        'apostrophe-rich-text': { toolbar: [ 'Styles', 'Bold', 'Italic', 'Link',
-        'Unlink' ], styles: [ { name: 'Heading', element: 'h2'}, { name:
-        'Min_Heading', element: 'h6'}, { name: 'Paragraph', element:'p' } ] } }
-        }) }}
-        <li><a class="footer-link" href="#">About Omnifood</a></li>
-        <li><a class="footer-link" href="#">For Business</a></li>
-        <li><a class="footer-link" href="#">Cooking partners</a></li>
-        <li><a class="footer-link" href="#">Careers</a></li>
-      </ul>
-    </nav>
-
-    <nav class="nav-col">
-      <p class="footer-heading">Resources</p>
-      <ul class="footer-nav">
-        <li><a class="footer-link" href="#">Recipe directory </a></li>
-        <li><a class="footer-link" href="#">Help center</a></li>
-        <li><a class="footer-link" href="#">Privacy &amp; terms</a></li>
-      </ul>
-    </nav>
+    <div class="footer-menu-block">
+      {{ apos.area(data.page, 'footer_menu', { widgets: apos.helpers.navWidgets
+      })}}
+    </div>
   </div>
 </footer>

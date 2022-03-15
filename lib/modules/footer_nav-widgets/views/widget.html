@@ -1,0 +1,15 @@
+{% set w = data.widget %}
+
+<nav class="nav-col">
+  <p class="footer-heading">{{w.linkTitle}}</p>
+  <ul class="footer-nav">
+    {% for item in w.links %} {% if item.linkType === 'page' %} {% set url =
+    item._linkPage._url %} {% elif item.linkType === 'custom' %} {% set url =
+    item.linkUrl %} {% else %} {{ apos.log('error detecting link type') }} {%
+    set url = '#' %} {% endif %}
+    <li>
+      <a class="{{ item.linkStyle }}" href="{{ url }}">{{ item.linkText }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
