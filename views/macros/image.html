@@ -1,8 +1,6 @@
 {% macro render(imageObj, options= {size: 'full', alt: false, description:
 false} ) %}
-<div
-  class="o-image__wrapper{% if options.class %} {{ options.class }}{% endif %}"
->
+<div class="image_wrapper{% if options.class %} {{ options.class }}{% endif %}">
   {% if imageObj === undefined %}
   <img
     class="o-image"
@@ -17,13 +15,9 @@ false} ) %}
     alt="{{ options.alt or imageObj.title or imageObj._description}}"
   />
   {% if options.description === true and imageObj._description %}
-  <figcaption class="o-meta o-image__caption">
-    {{ imageObj._description }}
-  </figcaption>
+  <figcaption class="image_caption">{{ imageObj._description }}</figcaption>
   {% elif apos.helpers._isString(options.description) %}
-  <figcaption class="o-meta o-image__caption">
-    {{ options.description }}
-  </figcaption>
+  <figcaption class="image_caption">{{ options.description }}</figcaption>
   {% endif %} {% endif %}
 </div>
 

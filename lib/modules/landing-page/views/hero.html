@@ -40,7 +40,8 @@
     </div>
     <div class="hero-img-box">
       <picture>
-        <img src="/modules/my-apostrophe-assets/image/hero.png" alt="" />
+        {{ apos.area(data.page, 'hero_menu', { widgets:
+        apos.helpers.narrowWidgets })}}
       </picture>
     </div>
   </div>

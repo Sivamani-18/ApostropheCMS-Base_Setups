@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 
-/* Common Css start */
-
 * {
   padding: 0;
   margin: 0;
@@ -103,6 +101,12 @@ button {
 }
 
 /* END */
+
+/* apos css */
+.apos-ui + .apos-refreshable .head-logo {
+  overflow: visible;
+}
+
 /* Common Css End */
 
 /* fixed or sticky header */
@@ -145,7 +149,6 @@ main {
   max-width: 100%;
   object-fit: cover;
 }
-
 .main-nav-list {
   list-style: none;
   display: flex;
@@ -295,7 +298,12 @@ main {
   background-color: #ffffff;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+.footer-container {
+  max-width: 1400px;
   padding: 0 32px;
   margin: 0 auto;
 }

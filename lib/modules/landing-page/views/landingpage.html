@@ -14,22 +14,13 @@ needs.", class: 'm-0' } %}
     <header class="header-section">
       <div class="head-logo">
         <a href="#">
-          <img src="/modules/my-apostrophe-assets/image/logo.png" alt="logo"
-        /></a>
+          {{ apos.area(data.page, 'body', { widgets: apos.helpers.narrowWidgets
+          })}}
+        </a>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a href="#how">How it works</a></li>
-          <li><a target="_blank" href="/src/timeline.html">Time Line</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li>
-            <a class="nav-link-btn" href="#"
-              >Try for free {{ svgs.DownArrow() }}</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <div class="nav-block">
+        {{ apos.area(data.global, 'Nav_menus', { widgets: { 'link':{} } })}}
+      </div>
     </header>
     {% include "./hero.html" %}
     <section class="section-how" id="how">
@@ -39,7 +30,6 @@ needs.", class: 'm-0' } %}
           Your daily dose of health in 3 simple steps
         </h2>
       </div>
-
       <div class="container grid grid--2-cols grid--center-v">
         <!-- STEP 01 -->
         <div class="step-text-box">
@@ -100,7 +90,6 @@ needs.", class: 'm-0' } %}
         </div>
       </div>
     </section>
-    {{ apos.area(data.page, 'body', { widgets: apos.helpers.narrowWidgets }) }}
     {% include "./footer.html" %}
   </main>
 </section>
