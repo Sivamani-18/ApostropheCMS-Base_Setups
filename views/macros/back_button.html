@@ -1,0 +1,36 @@
+{% macro render(label, options) %}
+<button
+  class="mw-btn {% if options.class %} {{ options.class }}{% endif %}"
+  onClick="history.back();"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="17.541"
+    height="12.414"
+    viewBox="0 0 17.541 12.414"
+  >
+    <g
+      id="Group_8335"
+      class="mw-icon-primary"
+      data-name="Group 8335"
+      transform="translate(-1161.793 -1379.578)"
+    >
+      <path
+        id="Path_15871"
+        data-name="Path 15871"
+        d="M-19361.43-19510.119h-13.469a1.251,1.251,0,0,1-1.25-1.25,1.251,1.251,0,0,1,1.25-1.25h13.469a1.251,1.251,0,0,1,1.25,1.25A1.251,1.251,0,0,1-19361.43-19510.119Z"
+        transform="translate(20539.514 20897.035)"
+        fill="#212035"
+      />
+      <path
+        id="Path_15872"
+        data-name="Path 15872"
+        d="M-19371.027-19504.008a1.247,1.247,0,0,1-.855-.338l-6.324-5.936.992-.912,5.342-4.9a1.253,1.253,0,0,1,.846-.328,1.254,1.254,0,0,1,.922.4,1.252,1.252,0,0,1-.076,1.768l-4.35,3.988,4.359,4.092a1.25,1.25,0,0,1,.057,1.768A1.251,1.251,0,0,1-19371.027-19504.008Z"
+        transform="translate(20540 20896)"
+        fill="#212035"
+      />
+    </g>
+  </svg>
+  <span>{{ label }}</span>
+</button>
+{% endmacro %}

@@ -1,13 +1,13 @@
-{% import 'macros/button.html' as button %} {% set btn = {url:"#"} %}
+{% import 'macros/button.html' as linkbtn %} {% set btn = {url:"#"} %}
 
 <section class="section-hero">
   <div class="hero">
-    <div class="hero-text-box">
+    <div class="hero-text-box {{sectionHeader.class}}">
       <h1 class="hero-heading">{{sectionHeader.title}}</h1>
       <p class="hero-para">{{sectionHeader.subtitle}}</p>
       <div class="btn-group">
-        {{ button.render('Start eating well',btn.url, { class:'btn--full' }) }}
-        {{ button.render('Learn more ↓',btn.url, { class:'btn--outline' }) }}
+        {{ linkbtn.render('Start eating well',btn.url, { class:'btn--full' }) }}
+        {{ linkbtn.render('Learn more ↓',btn.url, { class:'btn--outline' }) }}
       </div>
       <div class="delivered-meals">
         <picture>
@@ -46,3 +46,4 @@
     </div>
   </div>
 </section>
+{{ backbtn.render('Learn more', { class:'' }) }}

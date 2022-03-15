@@ -52,6 +52,57 @@ body {
   align-items: center;
 }
 
+/*Button*/
+
+.mw-btn {
+  min-width: 170px;
+  padding: 9px 38px;
+  font-size: 16px;
+  border-radius: 100px;
+  box-shadow: none;
+  font-weight: 600;
+  text-align: center;
+  line-height: 22px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 300ms;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.mw-btn:hover {
+  box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.16);
+}
+
+.mw-btn:focus {
+  outline: none;
+}
+.mw-btn.mw-rounded {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: auto !important;
+  padding: 0px !important;
+}
+.mw-btn:disabled {
+  background-color: #cacaca !important;
+  color: #707070 !important;
+  border: 1px solid #cacaca !important;
+  cursor: not-allowed;
+  box-shadow: none !important;
+}
+.mw-btn:disabled:hover {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  -webkit-appearance: none;
+}
+
+/* END */
 /* Common Css End */
 
 /* fixed or sticky header */
