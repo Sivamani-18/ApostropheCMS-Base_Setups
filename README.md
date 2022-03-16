@@ -1,4 +1,4 @@
-# This Project Based on Grid and Apostrophe CMS
+# This Project Based on Apostrophe CMS and Grid
 
 ### Installation
 ```
