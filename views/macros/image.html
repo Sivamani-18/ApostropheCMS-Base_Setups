@@ -10,7 +10,7 @@ false} ) %}
   {% else %} {% set url = apos.attachments.url(imageObj, { size: options.size,
   crop: imageObj._crop }) %}
   <img
-    class="o-image"
+    class="o-image {% if options.class1 %} {{ options.class1 }}{% endif %}"
     src="{{ url }}"
     alt="{{ options.alt or imageObj.title or imageObj._description}}"
   />

@@ -52,4 +52,8 @@ docker-compose stop
 
 When you start it up again, your uploaded files and your database will still be there.
 
+https://learncssgrid.com/
+
 https://mozilla.github.io/nunjucks/templating.html#extends
+
+https://lodash.com/docs/

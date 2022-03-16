@@ -28,6 +28,7 @@ const apos = require("apostrophe")({
     "two-panel-widgets": { extend: "apostrophe-widgets" },
     "link-widgets": { extend: "apostrophe-widgets" },
     "footer_nav-widgets": { extend: "apostrophe-widgets" },
+    "works-widgets": { extend: "apostrophe-widgets" },
 
     // Layout Widgets
     "columns-widgets": { extend: "apostrophe-widgets" },
